@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+    <RootNamespace>Payroll2.Api.Services</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\payroll2.api.dataaccess\Payroll2.Api.DataAccess.csproj" />
+    <ProjectReference Include="..\payroll2.api.framework\Payroll2.Api.Framework.csproj" />
+  </ItemGroup>
+
+</Project>

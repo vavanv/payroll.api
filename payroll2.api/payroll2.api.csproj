@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <RootNamespace>Payroll2.Api</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\TokenModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\payroll2.api.dataaccess\Payroll2.Api.DataAccess.csproj" />
+    <ProjectReference Include="..\payroll2.api.environment.services\Payroll2.Api.Environment.Services.csproj" />
+    <ProjectReference Include="..\payroll2.api.framework\Payroll2.Api.Framework.csproj" />
+    <ProjectReference Include="..\payroll2.api.services\Payroll2.Api.Services.csproj" />
+  </ItemGroup>
+
+</Project>
