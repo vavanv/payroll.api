@@ -55,9 +55,9 @@ namespace Payroll2.Api.Controllers
                 {
                     if (data == null) throw new BusinessException("Company Date must be provided");
 
-                    var campany = new Company();
-                    _mapper.MapFrom(data, campany);
-                    _companyService.UpdateCompany(campany);
+                    var company = new Company();
+                    _mapper.MapFrom(data, company);
+                    _companyService.UpdateCompany(company);
 
                     return Ok("Successfully updated");
                 }
