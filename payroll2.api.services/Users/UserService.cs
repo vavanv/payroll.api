@@ -38,33 +38,6 @@ namespace Payroll2.Api.Services.Users
             return user;
         }
 
-        //public async Task FixPassword()
-        //{
-        //    using (var context = _unitOfWork.Context)
-        //    {
-        //        using (var transaction = context.Database.BeginTransaction())
-        //        {
-        //            try
-        //            {
-        //                foreach (var u in await _users.All())
-        //                {
-        //                    var openedPassword = u.Password;
-        //                    u.Password = HashPassword.GetHashPassword(openedPassword);
-        //                    _users.Update(u);
-        //                }
-
-        //                context.SaveChanges();
-
-        //                transaction.Commit();
-        //            }
-        //            catch (Exception ex)
-        //            {
-        //                throw new BusinessException(ex.Message);
-        //            }
-        //        }
-        //    }
-        //}
-
         public async Task FixPassword()
         {
             try
